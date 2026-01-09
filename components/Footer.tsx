@@ -67,7 +67,7 @@ export default function Footer() {
             className="flex gap-4"
           >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/BarisAtik"
               target="_blank"
               rel="noopener noreferrer"
               className="glass p-3 rounded-lg hover:bg-white/10 transition-all duration-300 hover:scale-110"
