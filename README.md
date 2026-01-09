@@ -1,6 +1,6 @@
-# AI Engineer Portfolio
+# Baris Cagri Atik - Portfolio
 
-A sophisticated, minimal portfolio showcasing AI/ML expertise with an interactive neural network visualization.
+A sophisticated, minimal portfolio showcasing AI/ML and cybersecurity expertise with an interactive neural network visualization.
 
 ## Features
 
