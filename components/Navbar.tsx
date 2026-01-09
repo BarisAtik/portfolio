@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
         <a
           href="#"
-          className="text-lg sm:text-xl font-space font-medium tracking-tight flex-shrink-0"
+          className="text-sm sm:text-xl font-space font-medium tracking-tight flex-shrink-0"
         >
           BARIS CAGRI ATIK
         </a>

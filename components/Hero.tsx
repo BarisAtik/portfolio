@@ -21,7 +21,7 @@ export default function Hero() {
           className="space-y-8 text-center"
         >
 
-          <h1 className="font-playfair font-bold text-6xl md:text-7xl lg:text-8xl leading-tight">
+          <h1 className="font-playfair font-bold text-4xl md:text-7xl lg:text-8xl leading-tight">
             <motion.span
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -44,7 +44,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="text-xl md:text-2xl text-steel-gray max-w-2xl mx-auto leading-relaxed font-space font-semibold"
+            className="text-base md:text-2xl text-steel-gray max-w-2xl mx-auto leading-relaxed font-space font-semibold"
           >
             Master's student in Cyber Security & Artificial Intelligence combining deep knowledge of AI systems with
             specialized expertise in cybersecurity. Focused on AI security, specifically protecting systems against adversarial
