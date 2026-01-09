@@ -41,7 +41,7 @@ const ctfCompetitions = [
 
 export default function Certificates() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-50px' })
 
   return (
     <section id="education" className="py-24 px-6 relative overflow-hidden">
@@ -52,7 +52,7 @@ export default function Certificates() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">
@@ -72,7 +72,7 @@ export default function Certificates() {
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.2, delay: index * 0.03 }}
                 className="glass-strong p-6 rounded-xl hover:bg-white/15 transition-all duration-300 group"
               >
                 <div className="flex justify-between items-start mb-4">
@@ -108,7 +108,7 @@ export default function Certificates() {
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                transition={{ duration: 0.2, delay: index * 0.03 }}
                 className="glass p-5 rounded-xl hover:bg-white/10 transition-all duration-300 hover:scale-105 cursor-pointer group"
               >
                 <div className="text-3xl mb-3">{cert.icon}</div>
@@ -130,7 +130,7 @@ export default function Certificates() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.2, delay: 0.1 }}
             className="glass-strong p-6 rounded-xl"
           >
             <div className="flex flex-wrap gap-3">
@@ -139,7 +139,7 @@ export default function Certificates() {
                   key={index}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.4, delay: 0.7 + index * 0.05 }}
+                  transition={{ duration: 0.15, delay: 0.1 + index * 0.02 }}
                   className="glass px-4 py-2 rounded-full text-sm font-space hover:bg-white/10 transition-all"
                 >
                   {ctf}

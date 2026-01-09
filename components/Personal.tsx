@@ -53,7 +53,7 @@ const interests = [
 
 export default function Personal() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-50px' })
 
   return (
     <section id="personal" className="py-24 px-6 relative overflow-hidden">
@@ -64,7 +64,7 @@ export default function Personal() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">
@@ -82,7 +82,7 @@ export default function Personal() {
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.2, delay: index * 0.03 }}
               className="glass-strong p-6 rounded-xl hover:bg-white/15 transition-all duration-300 group cursor-pointer"
             >
               <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
@@ -101,7 +101,7 @@ export default function Personal() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
+          transition={{ duration: 0.2, delay: 0.1 }}
           className="glass-strong p-8 md:p-12 rounded-2xl"
         >
           <h3 className="text-3xl font-playfair font-bold mb-8 text-center">
@@ -113,7 +113,7 @@ export default function Personal() {
                 key={interest}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.8 + index * 0.08 }}
+                transition={{ duration: 0.2, delay: 0.1 + index * 0.02 }}
                 className="glass px-6 py-3 rounded-full font-space text-sm hover:bg-white/10 hover:scale-105 transition-all cursor-default"
               >
                 {interest}
@@ -126,7 +126,7 @@ export default function Personal() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6, delay: 1 }}
+          transition={{ duration: 0.2, delay: 0.15 }}
           className="mt-16 text-center max-w-3xl mx-auto"
         >
           <p className="text-xl md:text-2xl text-steel-gray leading-relaxed font-space italic">

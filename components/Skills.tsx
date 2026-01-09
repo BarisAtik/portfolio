@@ -63,7 +63,7 @@ const skillCategories = [
 
 function SkillBar({ skill, index }: { skill: { name: string; level: number }, index: number }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-50px' })
+  const isInView = useInView(ref, { once: true, margin: '-30px' })
 
   return (
     <div ref={ref} className="space-y-2">
@@ -75,7 +75,7 @@ function SkillBar({ skill, index }: { skill: { name: string; level: number }, in
         <motion.div
           initial={{ width: 0 }}
           animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
-          transition={{ duration: 1, delay: index * 0.1, ease: 'easeOut' }}
+          transition={{ duration: 0.3, delay: index * 0.02, ease: 'easeOut' }}
           className="h-full bg-gradient-to-r from-steel-gray to-warm-white rounded-full"
         />
       </div>
@@ -85,7 +85,7 @@ function SkillBar({ skill, index }: { skill: { name: string; level: number }, in
 
 export default function Skills() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-30px' })
 
   return (
     <section id="skills" className="py-24 px-6 relative overflow-hidden">
@@ -96,7 +96,7 @@ export default function Skills() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">
@@ -113,7 +113,7 @@ export default function Skills() {
               key={categoryIndex}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
+              transition={{ duration: 0.2, delay: categoryIndex * 0.03 }}
               className="glass-strong p-6 rounded-xl hover:bg-white/15 transition-all duration-300"
             >
               <h3 className="text-2xl font-playfair font-bold mb-6">
@@ -132,7 +132,7 @@ export default function Skills() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          transition={{ duration: 0.2, delay: 0.1 }}
           className="mt-16 glass-strong p-8 rounded-2xl"
         >
           <h3 className="text-2xl font-playfair font-bold mb-6 text-center">
@@ -161,7 +161,7 @@ export default function Skills() {
                 key={tech}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.4, delay: 0.8 + index * 0.05 }}
+                transition={{ duration: 0.15, delay: 0.1 + index * 0.05 }}
                 className="glass px-4 py-2 rounded-full text-sm font-space hover:bg-white/10 transition-all cursor-default"
               >
                 {tech}

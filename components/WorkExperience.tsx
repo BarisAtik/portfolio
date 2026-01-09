@@ -37,14 +37,14 @@ const experiences = [
 
 function ExperienceCard({ experience, index }: { experience: typeof experiences[0], index: number }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-50px' })
 
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, x: -50 }}
       animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-      transition={{ duration: 0.7, delay: index * 0.2 }}
+      transition={{ duration: 0.2, delay: index * 0.05 }}
       className="relative pl-8 pb-12 border-l-2 border-white/10 last:pb-0"
     >
       <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-steel-gray border-4 border-rich-black" />
@@ -83,7 +83,7 @@ function ExperienceCard({ experience, index }: { experience: typeof experiences[
 
 export default function WorkExperience() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-50px' })
 
   return (
     <section id="experience" className="py-24 px-6 relative overflow-hidden">
@@ -94,7 +94,7 @@ export default function WorkExperience() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">

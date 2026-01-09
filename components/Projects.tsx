@@ -41,14 +41,14 @@ const projects = [
 
 function ProjectCard({ project, index }: { project: typeof projects[0], index: number }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-50px' })
 
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, scale: 0.9 }}
       animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
+      transition={{ duration: 0.2, delay: index * 0.03 }}
       className={`md:${project.span} glass p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group relative overflow-hidden`}
     >
       <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-all duration-500" />
@@ -92,7 +92,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
 
 export default function Projects() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const isInView = useInView(ref, { once: true, margin: '-50px' })
 
   return (
     <section id="projects" className="py-24 px-6 relative overflow-hidden">
@@ -103,7 +103,7 @@ export default function Projects() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">
