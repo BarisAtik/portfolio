@@ -67,7 +67,7 @@ export default function Personal() {
           transition={{ duration: 0.2 }}
           className="mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">
+          <h2 className="text-3xl md:text-6xl font-playfair font-bold mb-4">
             Beyond the Code
           </h2>
           <p className="text-xl text-steel-gray font-space max-w-2xl">
@@ -76,23 +76,23 @@ export default function Personal() {
         </motion.div>
 
         {/* Hobbies Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 mb-16">
           {hobbies.map((hobby, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.2, delay: index * 0.03 }}
-              className="glass-strong p-6 rounded-xl hover:bg-white/15 transition-all duration-300 group cursor-pointer"
+              className="glass-strong p-3 sm:p-6 rounded-xl hover:bg-white/15 transition-all duration-300 group cursor-pointer"
             >
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
+              <div className="text-3xl sm:text-5xl mb-2 sm:mb-4 group-hover:scale-110 transition-transform text-center sm:text-left">
                 {hobby.icon}
               </div>
-              <h3 className="text-2xl font-playfair font-bold mb-2 group-hover:text-warm-white transition-colors">
+              <h3 className="text-sm sm:text-2xl font-playfair font-bold sm:mb-2 group-hover:text-warm-white transition-colors text-center sm:text-left">
                 {hobby.title}
               </h3>
-              <p className="text-steel-gray mb-3 leading-relaxed">{hobby.description}</p>
-              <p className="text-sm text-warm-white font-space">{hobby.details}</p>
+              <p className="text-steel-gray mb-3 leading-relaxed hidden sm:block">{hobby.description}</p>
+              <p className="text-sm text-warm-white font-space hidden sm:block">{hobby.details}</p>
             </motion.div>
           ))}
         </div>

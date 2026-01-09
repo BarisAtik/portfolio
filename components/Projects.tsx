@@ -106,7 +106,7 @@ export default function Projects() {
           transition={{ duration: 0.2 }}
           className="mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">
+          <h2 className="text-3xl md:text-6xl font-playfair font-bold mb-4">
             Featured Projects
           </h2>
           <p className="text-xl text-steel-gray font-space max-w-2xl">

@@ -97,7 +97,7 @@ export default function WorkExperience() {
           transition={{ duration: 0.2 }}
           className="mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">
+          <h2 className="text-3xl md:text-6xl font-playfair font-bold mb-4">
             Work Experience
           </h2>
           <p className="text-xl text-slate-muted font-space max-w-2xl">
