@@ -18,8 +18,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="space-y-8 text-center"
+          className="space-y-8 text-center relative"
         >
+          {/* Frosted glass backdrop - mobile only */}
+          <div className="absolute inset-0 md:hidden backdrop-blur-md bg-black/30 rounded-3xl -z-10" />
 
           <h1 className="font-playfair font-bold text-4xl md:text-7xl lg:text-8xl leading-tight">
             <motion.span
