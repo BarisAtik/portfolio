@@ -1,0 +1,142 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
+
+const hobbies = [
+  {
+    icon: '📚',
+    title: 'Reading',
+    description: 'Deep diving into AI research papers and sci-fi novels',
+    details: 'Favorite: "The Laws of Human Nature"',
+  },
+  {
+    icon: '🎮',
+    title: 'Gaming',
+    description: 'Strategy games and exploring game AI mechanics',
+    details: 'Interested in procedural generation',
+  },
+  {
+    icon: '✈️',
+    title: 'Travel',
+    description: 'Exploring new cultures and tech hubs around the world',
+    details: 'Visited 15+ countries',
+  },
+  {
+    icon: '🏋️',
+    title: 'HYROX',
+    description: 'Fitness racing combining running and functional workouts',
+    details: 'Training for competitive events',
+  },
+  {
+    icon: '🏃',
+    title: 'Running',
+    description: 'Marathon training with data-driven optimization',
+    details: 'Using ML for performance analysis',
+  },
+  {
+    icon: '🥊',
+    title: 'Boxing',
+    description: 'Training in boxing for fitness and discipline',
+    details: 'Building strength and focus',
+  },
+]
+
+const interests = [
+  'Open Source AI',
+  'AI Safety & Ethics',
+  'Sustainable Tech',
+  'Philosophy of Mind',
+  'Robotics',
+]
+
+export default function Personal() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-100px' })
+
+  return (
+    <section id="personal" className="py-24 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 noise-texture opacity-50" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.6 }}
+          className="mb-16"
+        >
+          <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-4">
+            Beyond the Code
+          </h2>
+          <p className="text-xl text-steel-gray font-space max-w-2xl">
+            What drives me outside of engineering
+          </p>
+        </motion.div>
+
+        {/* Hobbies Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {hobbies.map((hobby, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="glass-strong p-6 rounded-xl hover:bg-white/15 transition-all duration-300 group cursor-pointer"
+            >
+              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
+                {hobby.icon}
+              </div>
+              <h3 className="text-2xl font-playfair font-bold mb-2 group-hover:text-warm-white transition-colors">
+                {hobby.title}
+              </h3>
+              <p className="text-steel-gray mb-3 leading-relaxed">{hobby.description}</p>
+              <p className="text-sm text-warm-white font-space">{hobby.details}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Interests Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="glass-strong p-8 md:p-12 rounded-2xl"
+        >
+          <h3 className="text-3xl font-playfair font-bold mb-8 text-center">
+            Areas of Interest
+          </h3>
+          <div className="flex flex-wrap gap-4 justify-center">
+            {interests.map((interest, index) => (
+              <motion.div
+                key={interest}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.5, delay: 0.8 + index * 0.08 }}
+                className="glass px-6 py-3 rounded-full font-space text-sm hover:bg-white/10 hover:scale-105 transition-all cursor-default"
+              >
+                {interest}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Personal Statement */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 1 }}
+          className="mt-16 text-center max-w-3xl mx-auto"
+        >
+          <p className="text-xl md:text-2xl text-steel-gray leading-relaxed font-space italic">
+            "I believe AI should augment human capabilities, not replace them.
+            My goal is to build systems that empower people to achieve more than
+            they thought possible."
+          </p>
+          <div className="mt-8 h-1 w-24 bg-gradient-to-r from-steel-gray to-warm-white mx-auto rounded-full" />
+        </motion.div>
+      </div>
+    </section>
+  )
+}
