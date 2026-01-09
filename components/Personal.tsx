@@ -102,7 +102,7 @@ export default function Personal() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.2, delay: 0.1 }}
-          className="glass-strong p-8 md:p-12 rounded-2xl"
+          className="hidden md:block glass-strong p-8 md:p-12 rounded-2xl"
         >
           <h3 className="text-3xl font-playfair font-bold mb-8 text-center">
             Areas of Interest
