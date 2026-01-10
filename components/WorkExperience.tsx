@@ -62,7 +62,7 @@ function ExperienceCard({ experience, index }: { experience: typeof experiences[
           </span>
         </div>
 
-        <p className="text-steel-gray leading-relaxed mb-4">
+        <p className="text-steel-gray leading-relaxed mb-4 hidden md:block">
           {experience.description}
         </p>
 

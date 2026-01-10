@@ -20,7 +20,7 @@ const contactMethods = [
   {
     icon: '📱',
     label: 'Phone',
-    value: '+31 6 2616 6090',
+    value: '+31 6 26166090',
     link: 'tel:+31626166090',
   },
   {
