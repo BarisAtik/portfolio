@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
-            className="md:hidden text-sm text-black/80 dark:text-white/90 italic font-space mt-4"
+            className="hero-notice md:hidden text-sm italic font-space mt-4"
           >
             For the complete experience, visit on desktop
           </motion.p>

@@ -32,6 +32,14 @@
     html.light .hero-description {
       @apply text-ink-black !important;
     }
+
+    .hero-notice {
+      color: rgba(250, 250, 250, 0.9) !important;
+    }
+
+    html.light .hero-notice {
+      color: rgba(24, 24, 27, 0.8) !important;
+    }
   }
 
   html {
