@@ -46,7 +46,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="text-base md:text-2xl text-black dark:text-white md:text-steel-gray max-w-2xl mx-auto leading-relaxed font-space font-semibold"
+            className="text-base md:text-2xl text-black dark:text-white md:dark:text-steel-gray md:text-steel-gray max-w-2xl mx-auto leading-relaxed font-space font-semibold"
           >
             Master's student in Cyber Security & Artificial Intelligence combining deep knowledge of AI systems with
             specialized expertise in cybersecurity. Focused on AI security, specifically protecting systems against adversarial
@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
-            className="md:hidden text-sm text-black/70 dark:text-white/70 italic font-space mt-4"
+            className="md:hidden text-sm text-black/80 dark:text-white/90 italic font-space mt-4"
           >
             For the complete experience, visit on desktop
           </motion.p>
