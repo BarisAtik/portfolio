@@ -140,22 +140,9 @@ export default function Skills() {
           </h3>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
-              'JAX',
               'CUDA',
-              'OpenCV',
-              'Ray',
-              'Weights & Biases',
-              'Pinecone',
-              'ChromaDB',
-              'Airflow',
-              'Apache Spark',
-              'Grafana',
-              'Prometheus',
-              'TensorRT',
-              'ONNX',
-              'Triton',
               'Jupyter',
-              'Streamlit',
+              'Azure',
             ].map((tech, index) => (
               <motion.span
                 key={tech}
