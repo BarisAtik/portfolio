@@ -10,14 +10,12 @@ const education = [
     school: 'Radboud University',
     year: '2023 - 2025',
     focus: 'AI Security, Inference Attacks on MAMBA Architecture',
-    gpa: 'In Progress',
   },
   {
     degree: 'B.Sc. Computer Science',
     school: 'Radboud University',
     year: '2020 - 2023',
     focus: 'Minor in Artificial Intelligence, NFC Security',
-    gpa: 'Completed',
   },
 ]
 
@@ -86,11 +84,8 @@ export default function Certificates() {
                     {edu.year}
                   </span>
                 </div>
-                <p className="text-steel-gray mb-2">
-                  <span className="text-warm-white font-medium">Focus:</span> {edu.focus}
-                </p>
                 <p className="text-steel-gray">
-                  <span className="text-warm-white font-medium">GPA:</span> {edu.gpa}
+                  <span className="text-warm-white font-medium">Focus:</span> {edu.focus}
                 </p>
               </motion.div>
             ))}

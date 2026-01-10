@@ -26,8 +26,8 @@ const contactMethods = [
   {
     icon: '📍',
     label: 'Location',
-    value: 'Ede, Netherlands',
-    link: 'https://www.google.com/maps/place/Ede,+Netherlands',
+    value: 'Netherlands',
+    link: 'https://www.google.com/maps/place/Netherlands',
   },
 ]
 
