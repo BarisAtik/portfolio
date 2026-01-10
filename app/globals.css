@@ -23,6 +23,17 @@
     @apply text-medium-gray;
   }
 
+  /* Mobile hero text - ensure readability */
+  @media (max-width: 768px) {
+    .hero-description {
+      @apply text-warm-white !important;
+    }
+
+    html.light .hero-description {
+      @apply text-ink-black !important;
+    }
+  }
+
   html {
     scroll-behavior: smooth;
   }
