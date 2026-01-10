@@ -30,11 +30,11 @@ const projects = [
     span: 'col-span-1 row-span-1',
   },
   {
-    title: 'AI Security Framework',
-    description: 'Framework for testing and evaluating AI model robustness against adversarial attacks and inference threats.',
-    category: 'AI Security Tools',
-    technologies: ['PyTorch', 'TensorFlow', 'Python', 'Security Testing'],
-    impact: 'Research Project',
+    title: 'ISO 9001 & 27001 Project',
+    description: 'Implementation and compliance project for ISO 9001 (Quality Management) and ISO 27001 (Information Security Management) standards.',
+    category: 'Compliance & Standards',
+    technologies: ['ISO 9001', 'ISO 27001', 'Compliance', 'Risk Management'],
+    impact: 'Standards Implementation',
     span: 'col-span-2 row-span-1',
   },
 ]
