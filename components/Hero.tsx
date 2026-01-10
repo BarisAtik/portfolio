@@ -53,6 +53,16 @@ export default function Hero() {
             threats like inference attacks on MAMBA architectures.
           </motion.p>
 
+          {/* Desktop notice - mobile only */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 0.6 }}
+            className="md:hidden text-sm text-steel-gray/80 italic font-space mt-4"
+          >
+            For the complete experience, visit on desktop
+          </motion.p>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

@@ -88,7 +88,7 @@ export default function Skills() {
   const isInView = useInView(ref, { once: true, margin: '-30px' })
 
   return (
-    <section id="skills" className="py-24 px-6 relative overflow-hidden">
+    <section id="skills" className="hidden md:block py-24 px-6 relative overflow-hidden">
       <div className="absolute inset-0 noise-texture opacity-50" />
 
       <div className="max-w-7xl mx-auto relative z-10">
