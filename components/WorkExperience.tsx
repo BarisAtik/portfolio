@@ -6,14 +6,14 @@ import { useRef } from 'react'
 
 const experiences = [
   {
-    title: 'Senior AI Security Specialist & AI Engineer',
+    title: 'AI Engineer',
     company: 'New Orange',
     period: 'Oct. 2025 – Present',
-    description: 'Architecting secure-by-design AI solutions for enterprise clients. Engineering event-driven AI pipelines using n8n and Azure, ensuring robustness and compliance with EU AI Act requirements. Leading technical implementations that bridge AI capabilities with security-first design principles.',
-    technologies: ['Secure AI Design', 'n8n', 'Azure', 'Event-Driven Architecture', 'EU AI Act'],
+    description: 'Architecting secure-by-design AI solutions for enterprise clients. Engineering event-driven AI pipelines using N8N and Azure, ensuring robustness and compliance with EU AI Act requirements. Leading technical implementations that bridge AI capabilities with security-first design principles.',
+    technologies: ['Secure AI Design', 'N8N', 'Azure', 'Event-Driven Architecture', 'EU AI Act'],
   },
   {
-    title: '2nd Line Assurance Consultant',
+    title: 'AI Researcher',
     company: 'NXP Semiconductors',
     period: 'Mar. 2025 – Jun. 2025',
     description: 'Established benchmarks for EU AI Act Article 15 (Robustness, Accuracy, and Cybersecurity). Analyzed hardware-enforced access controls and secure boot mechanisms for embedded AI systems. Provided independent assurance reviews for AI system robustness in semiconductor environments.',
