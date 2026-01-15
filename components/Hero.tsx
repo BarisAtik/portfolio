@@ -48,9 +48,10 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="hero-description text-base md:text-2xl md:text-steel-gray max-w-2xl mx-auto leading-relaxed font-space font-semibold"
           >
-            Master's student in Cyber Security & Artificial Intelligence combining deep knowledge of AI systems with
-            specialized expertise in cybersecurity. Focused on AI security, specifically protecting systems against adversarial
-            threats like inference attacks on MAMBA architectures.
+            Senior AI Security Specialist & AI Engineer with a 5-year trajectory bridging natural and artificial intelligence.
+            Transitioned from adversarial CTF tactics to institutionalizing security practices at the enterprise level,
+            specializing in EU AI Act compliance, secure agentic AI design, and establishing robustness benchmarks for
+            next-generation AI systems.
           </motion.p>
 
           {/* Desktop notice - mobile only */}

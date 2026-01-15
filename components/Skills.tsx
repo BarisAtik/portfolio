@@ -6,80 +6,90 @@ import { useRef } from 'react'
 
 const skillCategories = [
   {
-    category: 'Programming Languages',
+    category: 'Frameworks & Standards',
     skills: [
-      { name: 'Python', level: 95 },
-      { name: 'C++', level: 85 },
-      { name: 'Java', level: 82 },
-      { name: 'Haskell', level: 75 },
+      { name: 'EU AI Act (Art. 15)', level: 'Expert' },
+      { name: 'ISO 21434', level: 'Expert' },
+      { name: 'ISO 27001', level: 'Advanced' },
+      { name: 'NIS2', level: 'Advanced' },
+      { name: 'NIST CSF', level: 'Advanced' },
+      { name: 'NIST SP 800-30', level: 'Proficient' },
+      { name: 'IEC 62443', level: 'Proficient' },
     ],
   },
   {
-    category: 'Security Tools',
+    category: 'Assurance & Governance',
     skills: [
-      { name: 'Kali Linux', level: 90 },
-      { name: 'Penetration Testing', level: 88 },
-      { name: 'Cryptography', level: 85 },
-      { name: 'ISO 21434', level: 80 },
+      { name: 'Verification & Validation (V&V)', level: 'Expert' },
+      { name: 'Control Effectiveness', level: 'Expert' },
+      { name: 'Management Reporting', level: 'Advanced' },
+      { name: 'GAP Analysis', level: 'Expert' },
+      { name: 'Risk Assessment', level: 'Expert' },
+    ],
+  },
+  {
+    category: 'AI Security',
+    skills: [
+      { name: 'Secure Agentic AI Design', level: 'Expert' },
+      { name: 'Inference Attack Mitigation', level: 'Expert' },
+      { name: 'Adversarial Robustness', level: 'Expert' },
+      { name: 'MAMBA Architecture Security', level: 'Advanced' },
+    ],
+  },
+  {
+    category: 'Programming Languages',
+    skills: [
+      { name: 'Python', level: 'Expert' },
+      { name: 'C++', level: 'Advanced' },
+      { name: 'Java', level: 'Advanced' },
+      { name: 'Haskell', level: 'Proficient' },
+    ],
+  },
+  {
+    category: 'Security Tools & Techniques',
+    skills: [
+      { name: 'Penetration Testing', level: 'Expert' },
+      { name: 'Kali Linux', level: 'Expert' },
+      { name: 'Cryptography', level: 'Advanced' },
+      { name: 'Vulnerability Research', level: 'Expert' },
     ],
   },
   {
     category: 'AI & Machine Learning',
     skills: [
-      { name: 'PyTorch', level: 90 },
-      { name: 'TensorFlow', level: 88 },
-      { name: 'MAMBA Architecture', level: 85 },
-      { name: 'AI Security', level: 92 },
-    ],
-  },
-  {
-    category: 'Systems & Platforms',
-    skills: [
-      { name: 'Linux', level: 93 },
-      { name: 'Windows', level: 85 },
-      { name: 'MacOS', level: 88 },
-      { name: 'Git', level: 90 },
-    ],
-  },
-  {
-    category: 'Web Technologies',
-    skills: [
-      { name: 'HTML/CSS', level: 82 },
-      { name: 'JavaScript', level: 78 },
-      { name: 'React/Next.js', level: 75 },
-      { name: 'Web Security', level: 88 },
-    ],
-  },
-  {
-    category: 'CTF & Hacking',
-    skills: [
-      { name: 'Hack The Box', level: 85 },
-      { name: 'CTF Challenges', level: 88 },
-      { name: 'Ethical Hacking', level: 90 },
-      { name: 'Vulnerability Research', level: 87 },
+      { name: 'PyTorch', level: 'Expert' },
+      { name: 'TensorFlow', level: 'Advanced' },
+      { name: 'Event-Driven AI Pipelines', level: 'Expert' },
+      { name: 'n8n Automation', level: 'Advanced' },
     ],
   },
 ]
 
-function SkillBar({ skill, index }: { skill: { name: string; level: number }, index: number }) {
+function SkillBadge({ skill, index }: { skill: { name: string; level: string }, index: number }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-30px' })
 
+  const levelColors = {
+    'Expert': 'bg-gradient-to-r from-emerald-500/20 to-green-500/20 border-emerald-500/40 text-emerald-200',
+    'Advanced': 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border-blue-500/40 text-blue-200',
+    'Proficient': 'bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border-purple-500/40 text-purple-200',
+  }
+
   return (
-    <div ref={ref} className="space-y-2">
-      <div className="flex justify-between items-center">
-        <span className="font-space text-sm text-warm-white">{skill.name}</span>
-        <span className="font-space text-xs text-steel-gray">{skill.level}%</span>
-      </div>
-      <div className="h-2 glass rounded-full overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
-          transition={{ duration: 0.3, delay: index * 0.02, ease: 'easeOut' }}
-          className="h-full bg-gradient-to-r from-steel-gray to-warm-white rounded-full"
-        />
-      </div>
-    </div>
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -20 }}
+      animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+      transition={{ duration: 0.2, delay: index * 0.02 }}
+      className="flex justify-between items-center group"
+    >
+      <span className="font-space text-sm text-warm-white group-hover:text-white transition-colors">
+        {skill.name}
+      </span>
+      <span className={`font-space text-xs px-3 py-1 rounded-full border ${levelColors[skill.level as keyof typeof levelColors]} transition-all`}>
+        {skill.level}
+      </span>
+    </motion.div>
   )
 }
 
@@ -103,7 +113,7 @@ export default function Skills() {
             Technical Skills
           </h2>
           <p className="text-xl text-steel-gray font-space max-w-2xl">
-            Expertise in cybersecurity, AI systems, and penetration testing
+            Specialized expertise in AI security governance, assurance frameworks, and secure-by-design AI systems
           </p>
         </motion.div>
 
@@ -119,9 +129,9 @@ export default function Skills() {
               <h3 className="text-2xl font-playfair font-bold mb-6">
                 {category.category}
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <SkillBar key={skillIndex} skill={skill} index={skillIndex} />
+                  <SkillBadge key={skillIndex} skill={skill} index={skillIndex} />
                 ))}
               </div>
             </motion.div>
@@ -140,9 +150,12 @@ export default function Skills() {
           </h3>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
+              'Azure',
               'CUDA',
               'Jupyter',
-              'Azure',
+              'Git',
+              'Linux',
+              'Docker',
             ].map((tech, index) => (
               <motion.span
                 key={tech}

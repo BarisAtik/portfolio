@@ -7,31 +7,31 @@ import { useRef } from 'react'
 const projects = [
   {
     title: 'Inference Attacks on MAMBA',
-    description: 'Master thesis research on adversarial attacks targeting the MAMBA architecture, exploring vulnerabilities in modern AI systems.',
+    description: 'Establishing risk profiles for novel AI architectures. Master thesis research analyzing adversarial vulnerabilities in MAMBA state-space models, contributing to the understanding of emerging AI security threats.',
     category: 'AI Security Research',
     technologies: ['PyTorch', 'MAMBA', 'Python', 'Adversarial ML'],
     impact: 'Thesis research 2024-2025',
     span: 'col-span-2 row-span-2',
   },
   {
-    title: 'NFC Security Research',
-    description: 'Bachelor thesis investigating security vulnerabilities in Near Field Communication protocols and implementations.',
+    title: 'NFC Security Protocol Analysis',
+    description: 'Security protocol analysis examining cryptographic vulnerabilities in Near Field Communication implementations. Bachelor thesis establishing security baseline for contactless communication systems.',
     category: 'Security Research',
-    technologies: ['NFC', 'Cryptography', 'C++'],
+    technologies: ['NFC', 'Cryptography', 'C++', 'Protocol Analysis'],
     impact: 'Published 2023',
     span: 'col-span-1 row-span-1',
   },
   {
-    title: 'ISO 21434 Compliance Analysis',
-    description: 'Research and implementation of European cybersecurity standards for automotive engineering systems.',
+    title: 'ISO 21434 Implementation',
+    description: 'Driving the implementation of policy into procedure for automotive cybersecurity standards. Navigated organizational resistance while mapping technical workflows to international compliance requirements.',
     category: 'Automotive Security',
-    technologies: ['ISO 21434', 'Risk Assessment', 'Compliance'],
-    impact: 'VSE Project 2024',
+    technologies: ['ISO 21434', 'Risk Assessment', 'GAP Analysis', 'V&V'],
+    impact: 'VSE Project 2024-2025',
     span: 'col-span-1 row-span-1',
   },
   {
     title: 'ISO 9001 & 27001 Project',
-    description: 'Implementation and compliance project for ISO 9001 (Quality Management) and ISO 27001 (Information Security Management) standards.',
+    description: 'Integrated implementation of Quality Management and Information Security Management standards, establishing frameworks for continuous improvement and security governance.',
     category: 'Compliance & Standards',
     technologies: ['ISO 9001', 'ISO 27001', 'Compliance', 'Risk Management'],
     impact: 'Standards Implementation',
@@ -110,7 +110,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-xl text-steel-gray font-space max-w-2xl">
-            Security research, CTF competitions, and AI vulnerability analysis
+            AI security research, standards implementation, and protocol analysis
           </p>
         </motion.div>
 

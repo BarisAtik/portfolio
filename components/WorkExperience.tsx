@@ -6,32 +6,32 @@ import { useRef } from 'react'
 
 const experiences = [
   {
-    title: 'AI Engineer',
+    title: 'Senior AI Security Specialist & AI Engineer',
     company: 'New Orange',
-    period: '2025 - Present',
-    description: 'Working as an AI Engineer at New Orange, a digital agency, developing and implementing AI solutions for clients. Building innovative AI-powered applications and contributing to cutting-edge digital transformation projects.',
-    technologies: ['AI Development', 'Machine Learning', 'Digital Solutions', 'Client Projects'],
+    period: 'Oct. 2025 – Present',
+    description: 'Architecting secure-by-design AI solutions for enterprise clients. Engineering event-driven AI pipelines using n8n and Azure, ensuring robustness and compliance with EU AI Act requirements. Leading technical implementations that bridge AI capabilities with security-first design principles.',
+    technologies: ['Secure AI Design', 'n8n', 'Azure', 'Event-Driven Architecture', 'EU AI Act'],
   },
   {
-    title: 'Cybersecurity Engineer',
-    company: 'VSE',
-    period: '2024',
-    description: 'Conducting research and compliance analysis regarding European ISO standards (ISO 21434) for cybersecurity in automotive/engineering contexts. Ensuring systems meet rigorous security requirements for modern connected vehicles.',
-    technologies: ['ISO 21434', 'Automotive Security', 'Compliance Analysis', 'Risk Assessment'],
-  },
-  {
-    title: 'AI Security Researcher Intern',
+    title: '2nd Line Assurance Consultant',
     company: 'NXP Semiconductors',
-    period: '2024',
-    description: 'Conducted research internship focused on EU AI Security at NXP Semiconductors in Eindhoven. Worked on cutting-edge AI security challenges in semiconductor and embedded systems contexts.',
-    technologies: ['EU AI Act', 'AI Security', 'Embedded Systems', 'Security Research'],
+    period: 'Mar. 2025 – Jun. 2025',
+    description: 'Established benchmarks for EU AI Act Article 15 (Robustness, Accuracy, and Cybersecurity). Analyzed hardware-enforced access controls and secure boot mechanisms for embedded AI systems. Provided independent assurance reviews for AI system robustness in semiconductor environments.',
+    technologies: ['EU AI Act Art. 15', 'Hardware Security', 'V&V', 'Embedded AI Security', 'Assurance'],
+  },
+  {
+    title: 'Cybersecurity Consultant',
+    company: 'V-S-E',
+    period: 'Oct. 2024 – Apr. 2025',
+    description: 'Performed comprehensive Cybersecurity GAP Analysis for ISO 21434 compliance in automotive engineering. Mapped technical workflows to international standards, driving implementation of policy into procedure while navigating organizational resistance. Delivered actionable recommendations for achieving regulatory compliance.',
+    technologies: ['ISO 21434', 'GAP Analysis', 'Automotive Security', 'Policy Implementation', 'Risk Assessment'],
   },
   {
     title: 'CTF Participant & Security Researcher',
     company: 'Various Competitions',
-    period: '2022 - 2024',
-    description: 'Active participant in Capture The Flag events and ethical hacking initiatives. Contributed to digital safety of Dutch municipalities through security assessments and vulnerability research.',
-    technologies: ['Kali Linux', 'Penetration Testing', 'Ethical Hacking', 'CTF Platforms'],
+    period: '2022 – 2024',
+    description: 'Active participant in Capture The Flag events and ethical hacking initiatives. Transitioned from adversarial tactics to defensive security practices. Contributed to digital safety of Dutch municipalities through security assessments and vulnerability research.',
+    technologies: ['CTF', 'Penetration Testing', 'Ethical Hacking', 'Vulnerability Research', 'Kali Linux'],
   },
 ]
 
@@ -100,8 +100,8 @@ export default function WorkExperience() {
           <h2 className="text-3xl md:text-6xl font-playfair font-bold mb-4">
             Work Experience
           </h2>
-          <p className="text-xl text-slate-muted font-space max-w-2xl">
-            Contributing to cybersecurity standards and ethical hacking initiatives
+          <p className="text-xl text-steel-gray font-space max-w-2xl">
+            Institutionalizing AI security practices and driving standards compliance
           </p>
         </motion.div>
 
