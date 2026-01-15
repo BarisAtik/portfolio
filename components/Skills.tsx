@@ -70,9 +70,9 @@ function SkillBadge({ skill, index }: { skill: { name: string; level: string }, 
   const isInView = useInView(ref, { once: true, margin: '-30px' })
 
   const levelColors = {
-    'Expert': 'bg-gradient-to-r from-emerald-500/20 to-green-500/20 border-emerald-500/40 text-emerald-200',
-    'Advanced': 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border-blue-500/40 text-blue-200',
-    'Proficient': 'bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border-purple-500/40 text-purple-200',
+    'Expert': 'bg-gradient-to-r from-emerald-600 to-green-600 border-emerald-700 text-white dark:from-emerald-500/20 dark:to-green-500/20 dark:border-emerald-500/40 dark:text-emerald-200',
+    'Advanced': 'bg-gradient-to-r from-blue-600 to-cyan-600 border-blue-700 text-white dark:from-blue-500/20 dark:to-cyan-500/20 dark:border-blue-500/40 dark:text-blue-200',
+    'Proficient': 'bg-gradient-to-r from-purple-600 to-indigo-600 border-purple-700 text-white dark:from-purple-500/20 dark:to-indigo-500/20 dark:border-purple-500/40 dark:text-purple-200',
   }
 
   return (
