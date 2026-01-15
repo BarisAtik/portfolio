@@ -8,11 +8,11 @@ const skillCategories = [
   {
     category: 'Frameworks & Standards',
     skills: [
-      { name: 'EU AI Act (Art. 15)', level: 'Expert' },
-      { name: 'ISO 21434', level: 'Expert' },
+      { name: 'EU AI Act', level: 'Expert' },
+      { name: 'ISO 21434', level: 'Advanced' },
       { name: 'ISO 27001', level: 'Advanced' },
       { name: 'NIS2', level: 'Advanced' },
-      { name: 'NIST CSF', level: 'Advanced' },
+      { name: 'NIST CSF', level: 'Proficient' },
       { name: 'NIST SP 800-30', level: 'Proficient' },
       { name: 'IEC 62443', level: 'Proficient' },
     ],
@@ -39,7 +39,7 @@ const skillCategories = [
   {
     category: 'Programming Languages',
     skills: [
-      { name: 'Python', level: 'Expert' },
+      { name: 'Python', level: 'Advanced' },
       { name: 'C++', level: 'Advanced' },
       { name: 'Java', level: 'Advanced' },
       { name: 'Haskell', level: 'Proficient' },
@@ -48,9 +48,9 @@ const skillCategories = [
   {
     category: 'Security Tools & Techniques',
     skills: [
-      { name: 'Penetration Testing', level: 'Expert' },
+      { name: 'Penetration Testing', level: 'Proficient' },
       { name: 'Kali Linux', level: 'Expert' },
-      { name: 'Cryptography', level: 'Advanced' },
+      { name: 'Cryptography', level: 'Expert' },
       { name: 'Vulnerability Research', level: 'Expert' },
     ],
   },
