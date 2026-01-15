@@ -59,8 +59,8 @@ const skillCategories = [
     skills: [
       { name: 'PyTorch', level: 'Expert' },
       { name: 'TensorFlow', level: 'Advanced' },
-      { name: 'Event-Driven AI Pipelines', level: 'Expert' },
-      { name: 'n8n Automation', level: 'Advanced' },
+      { name: 'Event-Driven AI Pipelines', level: 'Advanced' },
+      { name: 'n8n Automation', level: 'Expert' },
     ],
   },
 ]
