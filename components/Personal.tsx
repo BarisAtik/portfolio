@@ -130,9 +130,7 @@ export default function Personal() {
           className="mt-16 text-center max-w-3xl mx-auto"
         >
           <p className="text-xl md:text-2xl text-steel-gray leading-relaxed font-space italic">
-            "I believe AI should augment human capabilities, not replace them.
-            My goal is to build systems that empower people to achieve more than
-            they thought possible."
+            "True innovation requires the courage to push technology to its limits and the rigor to secure those boundaries. My mission is to transform AI security from a constraint into a competitive advantage; ensuring that beyond best-in-class intelligence is built on a foundation of absolute trust and verified resilience."
           </p>
           <div className="mt-8 h-1 w-24 bg-gradient-to-r from-steel-gray to-warm-white mx-auto rounded-full" />
         </motion.div>
