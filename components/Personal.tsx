@@ -8,7 +8,7 @@ const hobbies = [
   {
     icon: '📚',
     title: 'Reading',
-    description: 'Deep diving into AI research papers and sci-fi novels',
+    description: 'Deep diving into AI research papers and behavioral psychology',
     details: 'Favorite: "The Laws of Human Nature"',
   },
   {
@@ -20,8 +20,8 @@ const hobbies = [
   {
     icon: '✈️',
     title: 'Travel',
-    description: 'Exploring new cultures and tech hubs around the world',
-    details: 'Visited 15+ countries',
+    description: 'Exploring new cultures and tech hubs around the world, up next: Japan🇯🇵',
+    details: 'Visited 10+ countries',
   },
   {
     icon: '🏋️',
@@ -32,8 +32,8 @@ const hobbies = [
   {
     icon: '🏃',
     title: 'Running',
-    description: 'Marathon training with data-driven optimization',
-    details: 'Using ML for performance analysis',
+    description: 'Loving a jog through nature',
+    details: 'Just enjoying the scenery and being outdoors',
   },
   {
     icon: '🥊',
