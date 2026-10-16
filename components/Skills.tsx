@@ -150,12 +150,13 @@ export default function Skills() {
           </h3>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
-              'Azure',
-              'CUDA',
-              'Jupyter',
+              'Microsoft Azure',
+              'Azure Blob Storage',
+              'Azure AI Search',
+              'Azure Pipelines',
+              'Docker',
               'Git',
               'Linux',
-              'Docker',
             ].map((tech, index) => (
               <motion.span
                 key={tech}
