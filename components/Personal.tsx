@@ -12,10 +12,14 @@ const hobbies = [
     details: 'Favorite: "The Laws of Human Nature"',
   },
   {
-    icon: '🎮',
+    icon: (
+      <span className="inline-flex items-center justify-center w-[1em] h-[1em] rounded-xl bg-gradient-to-br from-pink-500 via-orange-400 to-yellow-300 shadow-lg">
+        <span className="text-white font-playfair font-black text-[0.5em] leading-none">VI</span>
+      </span>
+    ),
     title: 'Gaming',
-    description: 'Strategy games and exploring game AI mechanics',
-    details: 'Interested in procedural generation',
+    description: "Can't wait for GTA VI, counting down to Vice City",
+    details: 'Open worlds and the game AI that brings them to life',
   },
   {
     icon: '✈️',
@@ -24,10 +28,10 @@ const hobbies = [
     details: 'Visited 10+ countries',
   },
   {
-    icon: '🏋️',
-    title: 'HYROX',
-    description: 'Fitness racing combining running and functional workouts',
-    details: 'Training for competitive events',
+    icon: '🏍️',
+    title: 'Motorcycling',
+    description: 'Riding my BMW F 750 GS, on and off the beaten path',
+    details: 'Planning a motorcycle tour abroad soon',
   },
   {
     icon: '🏃',
