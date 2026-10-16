@@ -8,8 +8,8 @@ const contactMethods = [
   {
     icon: '📧',
     label: 'Email',
-    value: 'bariscagriatik@gmail.com',
-    link: 'mailto:bariscagriatik@gmail.com',
+    value: 'contact@baris-atik.com',
+    link: 'mailto:contact@baris-atik.com',
   },
   {
     icon: '💼',
