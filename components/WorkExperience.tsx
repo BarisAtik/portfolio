@@ -7,8 +7,15 @@ import { useRef } from 'react'
 const experiences = [
   {
     title: 'AI Engineer',
+    company: 'MrCopilot, Veenendaal',
+    period: '2026 – Present',
+    description: 'Designing and deploying AI agents into live production environments for clients. Building end-to-end automations that integrate AI into existing business processes, taking solutions from prototype to reliable, monitored production use.',
+    technologies: ['AI Agents', 'Production Deployment', 'Automation', 'LLM Integration', 'Workflow Automation'],
+  },
+  {
+    title: 'AI Engineer',
     company: 'New Orange',
-    period: 'Oct. 2025 – Present',
+    period: 'Oct. 2025 – 2026',
     description: 'Architecting secure-by-design AI solutions for enterprise clients. Engineering event-driven AI pipelines using N8N and Azure, ensuring robustness and compliance with EU AI Act requirements. Leading technical implementations that bridge AI capabilities with security-first design principles.',
     technologies: ['Secure AI Design', 'N8N', 'Azure', 'Event-Driven Architecture', 'EU AI Act'],
   },
